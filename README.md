@@ -14,8 +14,6 @@ In this unit, coders will create the classic game of tic tac toe in their browse
 - [ ] Make your site live on gh-pages
 - [ ] Submit your website using the link on the Agenda
 
-## Day 1 
-
 ### Day 1 Goal 2: Create variables to keep track of game data
 - [ ] Declare a variable that keeps track of the current player and set it equal to either a string of "X" or "O"
 - [ ] Declare a variable that keeps track of the total number of turns taken and set it equal to 0

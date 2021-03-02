@@ -8,6 +8,7 @@ function performLogic(buttonid,tilenumber){
   $(buttonid).hide();
   $(tilenumber).html(currentplayer);
   switchPlayer();
+  winner(tilenumber,"","");
 }
 
 function switchPlayer(){
@@ -18,6 +19,14 @@ function switchPlayer(){
   }
 }
 
+function winner(tid1,tid2,tid3){
+  //console.log($(tid1).html());
+  if($(tid1).html() === currentplayer && $(tid2).html() === currentplayer && $(tid3).html() === currentplayer){
+    return true;
+  } else{
+    return false;
+  }
+}
 
 $("#button1").click(function() {
     performLogic("#button1","#tile1");

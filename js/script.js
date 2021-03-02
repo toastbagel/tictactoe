@@ -9,6 +9,7 @@ function performLogic(buttonid,tilenumber){
   $(tilenumber).html(currentplayer);
   switchPlayer();
   winner(tilenumber,"","");
+  updateturn();
 }
 
 function switchPlayer(){
@@ -25,6 +26,32 @@ function winner(tid1,tid2,tid3){
     return true;
   } else{
     return false;
+  }
+}
+
+function verifyvertical(){
+  winner("#tile1", "#tile4", "#tile7");
+  winner("#tile2", "#tile5", "#tile8");
+  winner("#tile3", "#tile6", "#tile9");
+}
+
+function verifyhorizontal(){
+  winner("#tile1", "#tile2", "#tile3");
+  winner("#tile4", "#tile5", "#tile6");
+  winner("#tile7", "#tile8", "#tile9");
+}
+
+function verifydiagonal(){
+  winner("#tile1", "#tile5", "#tile9");
+  winner("#tile3", "#tile5", "#tile7");
+}
+
+function updateturn(){
+  turnstaken++;
+  console.log(turnstaken);
+  if(turnstaken === 9){
+    gameover = true;
+    $("h1").html("It's a draw!");
   }
 }
 

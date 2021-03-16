@@ -1,6 +1,9 @@
 let currentplayer = "X";
 let turnstaken = 0;
 let gameover = false;
+let xscore = 0;
+let oscore = 0;
+let drawscore = 0;
 
 function performLogic(buttonid, tilenumber) {
   if (gameover == false) {
@@ -42,6 +45,7 @@ function verifyvertical() {
   ) {
     gameover = true;
     $("h1").html(currentplayer + " Wins!");
+    updateScore(currentplayer);
   }
 }
 
@@ -53,6 +57,7 @@ function verifyhorizontal() {
   ) {
     gameover = true;
     $("h1").html(currentplayer + " Wins!");
+    updateScore(currentplayer);
   }
 }
 
@@ -63,6 +68,7 @@ function verifydiagonal() {
   ) {
     gameover = true;
     $("h1").html(currentplayer + " Wins!");
+    updateScore(currentplayer);
   }
 }
 function updateturn() {
@@ -71,9 +77,26 @@ function updateturn() {
   if (turnstaken === 9) {
     gameover = true;
     $("h1").html("It's a draw!");
+    updateScore("draw");
   }
 }
 
+function updateScore(whowins) {
+  if (whowins == "X") {
+    xscore++;
+    $("#xscore").html(xscore);
+  }
+
+  if (whowins == "O") {
+    oscore++;
+    $("#oscore").html(oscore);
+  }
+
+  if (whowins == "draw") {
+    drawscore++;
+    $("#drawscore").html(drawscore);
+  }
+}
 $("#button1").click(function() {
   performLogic("#button1", "#tile1");
 });

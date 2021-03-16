@@ -2,8 +2,8 @@
   width: 50%;
   display: flex;
   flex-wrap: wrap;
- 
   margin: auto;
+  size: 25px;
 }
 
 .tile {
@@ -26,19 +26,20 @@
   background: #F6A60E;
   color: black;
   text-align: center;
+  size: 25px;
 }
 
 button {
-
   font-family: "Raleway", sans-serif;
   color: black;
   background: #F5AD26;
   text-align: center;
+  size: 25px;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: white;
-  background-color:#F5AD26;
+  background-color: #F5AD26;
   text-align: center;
 }

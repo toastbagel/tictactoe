@@ -1,18 +1,43 @@
 .container {
-    width:50%;
-    display:flex;
-    flex-wrap:wrap;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .tile {
-    width:23%;
-    padding:5%;
+  width: 23%;
+  padding: 5%;
+  text-align: center;
 }
 
 .right {
-    border-right: 1px solid black;
+  border-right: 1px solid white;
+  text-align: center;
 }
 
 .bottom {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.container {
+  background: #F6A60E;
+  color: black;
+  text-align: center;
+}
+
+button {
+
+  font-family: "Raleway", sans-serif;
+  color: black;
+  background: #F5AD26;
+  text-align: center;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color:#F5AD26;
+  text-align: center;
 }

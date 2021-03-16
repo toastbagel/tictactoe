@@ -109,3 +109,64 @@ $("#button8").click(function() {
 $("#button9").click(function() {
   performLogic("#button9", "#tile9");
 });
+
+$("#reset").click(function() {
+  currentplayer = "X";
+  turnstaken = 0;
+  gameover = false;
+  $("h1").html("Tic Tac Toe");
+
+  $("#tile9").html('<button id="button9">Tile 9</button>');
+  $("#button9").click(function() {
+    console.log("hello9");
+    performLogic("#button9", "#tile9");
+  });
+
+  $("#tile8").html('<button id="button8">Tile 8</button>');
+  $("#button8").click(function() {
+    console.log("hello8");
+    performLogic("#button8", "#tile8");
+  });
+
+  $("#tile7").html('<button id="button7">Tile 7</button>');
+  $("#button7").click(function() {
+    console.log("hello7");
+    performLogic("#button7", "#tile7");
+  });
+
+  $("#tile6").html('<button id="button6">Tile 6</button>');
+  $("#button6").click(function() {
+    console.log("hello6");
+    performLogic("#button6", "#tile6");
+  });
+
+  $("#tile5").html('<button id="button5">Tile 5</button>');
+  $("#button5").click(function() {
+    console.log("hello5");
+    performLogic("#button5", "#tile5");
+  });
+
+  $("#tile4").html('<button id="button4">Tile 4</button>');
+  $("#button4").click(function() {
+    console.log("hello4");
+    performLogic("#button4", "#tile4");
+  });
+
+  $("#tile3").html('<button id="button3">Tile 3</button>');
+  $("#button3").click(function() {
+    console.log("hello3");
+    performLogic("#button3", "#tile3");
+  });
+
+  $("#tile2").html('<button id="button2">Tile 2</button>');
+  $("#button2").click(function() {
+    console.log("hello2");
+    performLogic("#button2", "#tile2");
+  });
+
+  $("#tile1").html('<button id="button1">Tile 1</button>');
+  $("#button1").click(function() {
+    console.log("hello1");
+    performLogic("#button1", "#tile1");
+  });
+});
